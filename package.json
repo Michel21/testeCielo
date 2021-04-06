@@ -1,0 +1,17 @@
+{
+  "name": "testecielo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "json-server --watch db.json",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "json-server": "^0.15.1",
+    "express": "^4.12.3"
+  }
+}
