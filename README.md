@@ -11,7 +11,7 @@ npm install - para baixar as dependências do projeto.
 npm run server - para subir o servidor que estarar rodando na porta: 3000
 
 #Terceiro passo, abrar o navegador da sua preferência e cole a seguinte url:
-http://localhost:3000/#/home 
+http://localhost:3000/#/home - para ver o resultado.
 
 
 
