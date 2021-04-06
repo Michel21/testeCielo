@@ -1,4 +1,4 @@
-# Projeto contem um gráfico e uma tabela demostando informações do EC.
+# Projeto contem um gráfico e uma tabela com informações do EC.
 
 #Como rodar o projeto:
 
