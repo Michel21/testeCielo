@@ -21,13 +21,21 @@ angular.module('myDiretivas', [])
         ddo.restrict = 'E';
         ddo.templateUrl = 'js/directives/my-grafic.html';
         ddo.controller = function($scope, $http) {
+
+            const formatPrice = function(value) {
+               return  new Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+              }).format(value)
+            }
+                
             $http.get('/totalControleLancamento')
              .success(function(result) {
-                $scope.labels = ["Quantida de Lancamentos", "Quantidade Remessas", "Valor Lancamentos"];
+                $scope.labels = ["Quantidade de Lancamentos", "Quantidade Remessas", "Valor Lancamentos"];
                 $scope.data = [result.quantidadeLancamentos, result.quantidadeRemessas, result.valorLancamentos];
          })
-        .error(function(erro) {
-            console.log(erro);
+        .error(function() {
+            $scope.mensagem = "Serviço indisponivel, tente novamente";
         });
      };
         return ddo;

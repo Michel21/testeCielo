@@ -1,5 +1,8 @@
 <h1>Gráfico:</h1>
  <div class="grafico"> 
+  <span class="error" ng-show="!data">
+    <p>Nenhum dado encontrado.</p>
+  </span>
    <canvas 
    id="pie" 
    class="chart chart-pie" 

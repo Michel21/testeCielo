@@ -3,7 +3,11 @@
 		<h1 class="text-center">Lançamentos em conta legado</h1>
 	</div>
 </div>
-
+<div class="container">
+	<p ng-show="mensagem.length" class="alert alert-info">
+		{{mensagem}}
+	</p>
+</div>
 <div class="container row">
 	<div class="col-md-12 mt-20">
 		<my-grafic></my-grafic>
@@ -41,6 +45,9 @@
 						</tr>
 					</tbody>
 				</table>
+				<span class="error" ng-show="accounts.length <= 0">
+					<p>Nenhum dado encontrado.</p>
+				</span>
 		</div>
     </my-painel>
 </div>
